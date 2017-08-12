@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #middle {
+            background-color: lightpink;
+            width: 100%;
+            flex:1;
+        }
+
+        #left {
+            background-color: red;
+            width: 100px;
+            order:-1;/*设置left的位置在middle之前*/
+        }
+
+        #right {
+            background-color: aqua;
+            width: 100px;
+        }
+
+        #container{
+            display: flex;
+        }
+   </style>
+</head>
+<body>
+<div id="container">
+    <div id="middle">middle</div>
+    <div id="left">left</div>
+    <div id="right">right</div>
+</div>
+</body>
+</html>

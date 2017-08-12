@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body,
+        div {
+            margin: 0;
+            padding: 0;
+            border: 0 none;
+        }
+
+        /*左侧定宽＋浮动*/
+        .left {
+            width: 200px;
+            height: 200px;
+            background-color: #f00;
+            float: left;
+        }
+
+        /*右侧用margin-left或者padding-left实现单侧固定的流体布局*/
+        .right {
+            margin-left: 200px;
+            height: 200px;
+            background-color: #ff0;
+        }
+
+
+    </style>
+</head>
+
+<body>
+<div class="left">左侧定宽</div>
+<div class="right">右侧自适应</div>
+
+</body>
+</html>
